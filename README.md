@@ -42,23 +42,3 @@ In case you want to run it without Docker (requires additional setup):
 
 * Node.js installed
 * MongoDB connection
-
-### Steps:
-1. Clone repo on your local machine:
-```
-$ git clone https://github.com/ivan3123708/fullstack-shopping-cart.git
-```
-2. Run `docker-compose`
-```
-$ cd fullstack-shopping-cart
-$ docker-compose up -d
-```
-This will pull images and build 3 containers for each part of the application: `frontent`, `backend` & `db`.
-
-3. If everything went without problems, go to `localhost:3000`, you should see the running app.
-
-- `frontend` container (React app) runs on port `3000`
-- `backend` container (Node api) runs on port `5000`
-- `db` container (MongoDB server) runs on port `27017`
-
-Use `docker exec -it <container name> bash` to troubleshoot if there are any problems.
